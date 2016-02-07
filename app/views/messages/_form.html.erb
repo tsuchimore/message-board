@@ -11,11 +11,15 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="row">
+    <div class="col-md-12">
   名前:
-  <%= f.text_field :name %>
+  <%= f.text_field :name, class: "form-control" %>
 
   内容:
-  <%= f.text_field :body %>
+  <%= f.text_field :body, class: "form-control" %>
+  
   <%= f.submit class: "btn btn-sm btn-primary" %>
+    </div>
+  </div>
 <% end %>
